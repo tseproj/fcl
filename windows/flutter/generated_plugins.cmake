@@ -3,6 +3,15 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  connectivity_plus
+  file_selector_windows
+  flutter_acrylic
+  screen_retriever
+  sqlite3_flutter_libs
+  system_theme
+  url_launcher_windows
+  webview_windows
+  window_manager
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
