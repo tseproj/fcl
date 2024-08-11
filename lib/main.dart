@@ -1,6 +1,12 @@
+import 'package:fcl/utils/storage/init.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  if (!ConfigInitializer.isInitialized) {
+    await ConfigInitializer.initializeConfig();
+  }
   runApp(const MainApp());
 }
 
